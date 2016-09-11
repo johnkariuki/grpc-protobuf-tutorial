@@ -1,0 +1,29 @@
+syntax = "proto3"; //Specify proto3 version.
+
+package work_leave; //Optional: unique package name.
+
+//Service. define the methods that the grpc server can expose to the client.
+service EmployeeLeaveDaysService {
+  rpc EligibleForLeave (Employee) returns (LeaveEligibility);
+  rpc grantLeave (Employee) returns (LeaveFeedback);
+}
+
+// Message Type fefinition for an Employee.
+message Employee {
+  int32 employee_id = 1;
+  string name = 2;
+  float accrued_leave_days = 3;
+  float requested_leave_days = 4;
+}
+
+// Message Type definition for LeaveEligibility response.
+message LeaveEligibility {
+  bool eligible = 1;
+}
+
+// Message Type definition for LeaveFeedback response.
+message LeaveFeedback  {
+  bool granted = 1;
+  float accrued_leave_days = 2;
+  float granted_leave_days = 3;
+}
