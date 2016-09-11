@@ -1,0 +1,6 @@
+[default]
+ip = 127.0.0.1
+port = 50050
+dir = proto
+file = work_leave.proto
+insecure = true

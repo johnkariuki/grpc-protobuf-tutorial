@@ -1,0 +1,20 @@
+{
+  "name": "grpc-protobuf-tutorial",
+  "version": "1.0.0",
+  "description": "Implementing Remote Procedure Calls With gRPC and Protocol Buffers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "grpc",
+    "protocol",
+    "buffers",
+    "rpc"
+  ],
+  "author": "John Kariuki",
+  "license": "ISC",
+  "dependencies": {
+    "grpc": "^1.0.0"
+  }
+}
