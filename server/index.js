@@ -16,7 +16,7 @@ server.addProtoService(proto.work_leave.EmployeeLeaveDaysService.service, {
         callback(null, { eligible: true });
       } else {
         callback(null, { eligible: false });
-      }-1
+      }
     } else {
       callback(new Error('Invalid requested days'));
     }
