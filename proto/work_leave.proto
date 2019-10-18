@@ -4,7 +4,7 @@ package work_leave; //Optional: unique package name.
 
 //Service. define the methods that the grpc server can expose to the client.
 service EmployeeLeaveDaysService {
-  rpc EligibleForLeave (Employee) returns (LeaveEligibility);
+  rpc eligibleForLeave (Employee) returns (LeaveEligibility);
   rpc grantLeave (Employee) returns (LeaveFeedback);
 }
 
